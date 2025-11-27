@@ -5,7 +5,7 @@ variable "aws_region" {
 }
 
 variable "bucket_name" {
-    description = "AWS region to use"
+    description = "Name of S3 bucket for recipebook"
     type        = string
     default     = "bellybrewrecipebook" 
 }
