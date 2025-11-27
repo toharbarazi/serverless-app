@@ -4,7 +4,6 @@ provider "aws" {
 
 resource "aws_s3_bucket" "bellybrew_recipe_book" {
   bucket = var.bucket_name
-
   object_ownership = "BucketOwnerEnforced"
 
   block_public_access {

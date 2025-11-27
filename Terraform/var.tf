@@ -10,3 +10,9 @@ variable "bucket_name" {
     default     = "bellybrewrecipebook" 
 }
 
+variable "book_source" {
+    description = "file location"
+    type        = string
+    default     = "../recipebook/book.pdf" 
+}
+
