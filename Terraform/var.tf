@@ -15,4 +15,9 @@ variable "book_source" {
     type        = string
     default     = "../recipebook/book.pdf" 
 }
+variable "dyanmoDB_table_name" {
+    description = "the table name for the DB"
+    type        = string
+    default     = "ProfileTableTohar" 
+}
 

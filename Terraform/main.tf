@@ -44,3 +44,15 @@ resource "aws_s3_object" "recipebook_upload" {
   source                 = var.book_source
   acl                    = "private"  # גישת ה-ACL
 }
+
+resource "aws_dynamodb_table" "profile_table" {
+  name           = var.dyanmoDB_table_name
+  hash_key       = "Email"
+  billing_mode   = "PAY_PER_REQUEST"  # Using the default billing mode (On-demand)
+  attribute {
+    name = "Email"
+    type = "S"  # "S" represents a String type
+  }
+
+}
+
