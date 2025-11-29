@@ -38,3 +38,21 @@ variable "iam_role_name" {
   description = "The name for the IAM role"
   default     = "bellybrew_role"
 }
+
+variable "lambda_name" {
+  type        = string
+  description = "The name for the lambda funtion"
+  default     = "bellybrew_function"
+}
+
+variable "lambda_code_filename" {
+  type        = string
+  description = "Path to the Lambda code .zip file"
+  default     = "./lambda_function.zip"
+}
+
+variable "api_name" {
+  description = "The name of the API Gateway"
+  type        = string
+  default     = "bellybrew-api"
+}
