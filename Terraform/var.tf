@@ -21,3 +21,10 @@ variable "dyanmoDB_table_name" {
     default     = "ProfileTableTohar" 
 }
 
+variable "ses_from_email_address" {
+  description = "The email address to use as the SES identity"
+  type        = string
+  default     = "toharbarazi@gmail.com"
+}
+
+

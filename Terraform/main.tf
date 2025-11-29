@@ -56,3 +56,8 @@ resource "aws_dynamodb_table" "profile_table" {
 
 }
 
+resource "aws_ses_email_identity" "from_email" {
+  email = var.ses_from_email_address
+}
+
+
