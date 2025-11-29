@@ -27,4 +27,14 @@ variable "ses_from_email_address" {
   default     = "toharbarazi@gmail.com"
 }
 
+variable "iam_policy_name" {
+  type        = string
+  description = "The name for the IAM policy"
+  default     = "bellybrew_policy"
+}
 
+variable "iam_role_name" {
+  type        = string
+  description = "The name for the IAM role"
+  default     = "bellybrew_role"
+}
